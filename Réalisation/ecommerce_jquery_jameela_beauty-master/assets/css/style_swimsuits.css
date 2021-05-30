@@ -1,0 +1,35 @@
+body{
+    height: 100rem;
+    font-family: "Chillax-Light";
+}
+/*===================== changement Header page ================*/
+header .icons i:hover, header .icons a:hover{
+    color: #ffd7ba;
+}
+    #search-box{
+    background:#ffd7ba;
+}
+header .navbar a:hover{
+    color: #ffd7ba;
+}
+@media (max-width:991px){
+    header .navbar.nav-toggle{
+        transform: scaleY(1);
+        opacity: 1;
+background-color: rgba(252, 213, 206, 0.8);   
+}
+}
+/* produit*/
+.card {
+    border: none;
+}
+.p{
+    font-size: 5rem;
+}
+@media (max-width: 736px) {
+.img-tot {
+    width: 180px;
+    height: 180px;
+}
+}
+

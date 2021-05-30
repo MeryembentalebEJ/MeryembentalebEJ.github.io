@@ -1,0 +1,167 @@
+/*=========== media queries  ==========*/
+@media (max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+    .home{
+        padding:1rem 4rem;
+    }
+}
+@media (max-width:1024px){
+    .home p{
+        max-width: 70rem;
+    }
+    .about .row .counter .box.letter{
+        width:70rem;
+    }
+    #progress-bar-container li .step-inner{
+        position: absolute;
+        width: 100%;
+        top: 40%;
+        font-size: 10px;
+      }
+      #progress-content-section{
+        border-radius: 8px;
+        margin-top: 15%;
+      }
+      #progress-bar-container #line{
+        top: 145px;
+      } 
+      .about .row .presentation p{
+        font-size: 2rem;
+     }
+     .about .row .presentation .box{
+         width:70rem;
+     }
+     .portfolio .project { 
+        width: 600px;
+    }
+}
+
+@media (max-width:991px){
+   header{
+       left:-120%;
+   }
+   #menu{
+       display: block;
+   }
+   header.toggle{
+    left:0%;
+   }
+   body{
+       padding:0;
+   }
+   .skills .box{
+    width: 100%;
+   } 
+   .skills .box .item-desc {
+    font-size: 2rem;
+   }
+}
+@media (max-width:768px){
+
+    html{
+        font-size: 50%;
+    }
+    #progress-content-section{
+        border-radius: 7px;
+        margin-top: 17%;
+      }
+      .home p{
+        max-width: 70rem;
+    }
+      #progress-bar-container #line{
+        left: 10%;
+        top: 175px;
+      } 
+      #progress-bar-container li:after{
+        margin-top: 120px;
+      }
+      .about .row .presentation p{
+        font-size: 2rem;
+     }
+     .about .row .counter .box.letter{
+        width:70rem;
+    }
+     .portfolio .project { 
+        width: 700px;
+    }
+    .portfolio{
+        margin-left: 15px;
+    }
+    .skills .row{
+        padding:0 0 0;
+    }
+    
+ }
+ @media (max-width:414px){
+    #progress-content-section{
+        border-radius: 7px;
+        margin-top: 30%;
+      }
+      .portfolio .project { 
+        width: 400px;
+    }
+    .portfolio{
+        margin-left: 0px;
+    }
+}
+@media (max-width:400px){
+
+    header{
+        width: 100vw;
+    }
+    .heading{
+        margin:0 3rem;
+    }
+  
+    .about .row .counter .box{
+        width: 100%;
+    }
+    .about .row .presentation .box{
+        width: 100%;
+    }
+    .about .row .counter .box.letter{
+        width:40rem;
+    }
+    .portfolio .project { 
+        width: 350px;
+    }
+    .education .box-container .box{
+        width:100%;
+    }
+    .portfolio .box-container .box{
+        width:100%;
+    }
+    .portfolio{
+        margin-left: 0px;
+    }
+    .contact .row form{
+        margin:3rem 0;
+    }
+    #progress-bar-container li .step-inner{
+        position: absolute;
+        width: 100%;
+        top: 40%;
+        font-size: 8px;
+      }
+      #progress-content-section li{
+        font-size:12px;
+        line-height:1.6em;
+      }
+      #progress-content-section{
+        border-radius: 8px;
+        margin-top: 50%;
+      }
+      #progress-bar-container #line{
+        top: 175px;
+      } 
+      .wrapper .icon span{
+        height: 50px;
+        width: 40px;
+    }
+    .wrapper .icon span i{
+        font-size: 25px;
+        line-height: 50px;
+    }
+ }

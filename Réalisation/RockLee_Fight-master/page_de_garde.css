@@ -1,0 +1,52 @@
+/*Font-family*/
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans&display=swap');
+/* font-family: 'Luckiest Guy', cursive; */
+/* Variables */
+:root{
+    --textShadow: 0 10px 2px rgba(0,0,0); /*Ombres textes*/
+    --boxShadow: 0 0px 20px rgba(0,0,0,.2); /*Ombres boites*/
+}
+/* * Pour enlever le style de base*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("images/garara_rocklee.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+}
+#jouer, .name{
+    font-family: 'Luckiest Guy', cursive; 
+    border: none;
+    background-color: transparent;
+    font-size: 100px;
+    text-shadow: var(--textShadow);
+    color: red;
+}
+#jouer a{
+    text-decoration: none;
+    color: red;
+}
+.bas{
+    height: 750px;
+}
+@media screen and (max-width : 1024px){ /*version tablette*/
+    .name{
+        font-size: 60px;
+    }
+    .bas{
+        height: 550px;
+    }
+}
+@media screen and (max-width : 600px){ /*version portable*/
+    #jouer{
+        font-size: 60px;
+    }
+    .name{
+        display: none;
+    }
+}

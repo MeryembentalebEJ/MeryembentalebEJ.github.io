@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jameela website (e-commerce)</title>
+  <!-- Lien pour les font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <!-- animation -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <!-- CSS file génaral -->
+  <link rel="stylesheet" href="assets/css/style_géneral.css">
+  <!-- CSS file -->
+  <link rel="stylesheet" href="assets/css/style_beauty.css">
+  <!-- Jq ui pour l autocomplete -->
+  <link rel="stylesheet" href="assets/css/jq-ui.css">
+</head>
+
+<body>
+  <!--==================== Start Header avec la navbar ======================-->
+  <header>
+    <div id="menu" class="fa fa-diamond"></div>
+    <a href="#" class="logo"><img src="assets/img/Beauty/logo_meryem.png" alt="logo" height="100" width="auto"></a>
+    <nav class="navbar">
+      <a href="index.html">Accueil</a>
+      <a href="beauty.html">Beauty</a>
+      <a href="tote-bags.html">Tote bags</a>
+      <a href="Sunglasses.html">Sunglasses</a>
+      <a href="swimsuits.html">Swimsuits</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="icons">
+      <i class="fa fa-search" id="search-icon"></i>
+      <i class="fa fa-user-circle-o icon" id="user"></i>
+      <i class="fa fa-cart-plus icon" data-toggle="modal" data-target="#cart">(<span class="total-count"></span>)</i>
+    </div>
+
+    </div>
+    <form id="search-box">
+      <input type="search" id="search" placeholder="Search here">
+      <label for="search" class="fa fa-search" style="font-size:20px"></label>
+    </form>
+  </header>
+  <!--==================== End Header avec la navbar ======================-->
+  <!--====================== Start login and sing in =======================-->
+  <div class="form">
+    <!-- login -->
+    <div class="login-form">
+      <!-- cancel btn -->
+      <a href="#" class="form-cancel">
+        <i class="fa fa-times"></i>
+      </a>
+      <!-- heading! -->
+      <strong>Log In</strong>
+      <!-- Inputs -->
+      <form>
+        <input type="email" placeholder="Exemple@gmail.com" name="email" required>
+        <input type="password" placeholder="Mot de passe" name="password" required>
+        <!-- submit btn -->
+        <input type="submit" value="Log In">
+      </form>
+      <!-- forget and sing up btn -->
+      <div class="form-btns">
+        <a href="#" class="forget">Mot de passe oublié?</a>
+        <a href="#" class="sign-up-btn">Creer un compte</a>
+      </div>
+    </div>
+    <!-- Sing Up -->
+    <div class="sign-up-form">
+      <!-- cancel btn -->
+      <a href="#" class="form-cancel">
+        <i class="fa fa-times"></i>
+      </a>
+      <!-- heading! -->
+      <strong>Sign Up</strong>
+      <!-- Inputs -->
+      <form>
+        <input type="text" placeholder="Nom et Prénom" name="fullName" required>
+        <input type="email" placeholder="Exemple@gmail.com" name="email" required>
+        <input type="password" placeholder="Mot de passe" name="password" required>
+        <!-- submit btn -->
+        <input type="submit" value="Sing Up">
+      </form>
+      <!-- forget and sign up btn -->
+      <div class="form-btns">
+        <a href="#" class="Already-acount">Avez-vous déjà un compte?</a>
+      </div>
+    </div>
+  </div>
+  <!--=================== End log in and sing in  form ================-->
+  <!--=============== Start section intro ============================-->
+  <section id="hero" class="d-flex align-items-center py-5">
+    <div class="container text-center position-relative">
+      <h1>Argan</h1>
+      <h2>La magie de la nature</h2>
+      <a href="#intro" class="btn-get-started scrollto"><i class="fa fa-anchor" style="font-size:20px"></i>Consulez ici
+      </a>
+    </div>
+  </section>
+  <section class="intro py-5" id="intro">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-8 col-md-12">
+          <h1 class="py-4">L'HUILE D'ARGAN, UN SOIN PERFORMANT TOTALEMENT NATUREL.</h1>
+          <p>
+            L'huile d'argan est l'un des produits naturels les plus riches en vitamines E qui soient.
+            Elle est également composée dans une très grande proportion d'acides gras insaturés.
+            L'ensemble lui confère des propriétés cosmétiques exceptionnelles qui sont
+            largement décrites dans les rubriques du site : Huile d'argan & Beauté.
+          </p>
+          <p>
+            L'huile d'argan excelle en particulier contre le dessèchement cutané et retarde l'inexorable processus de
+            vieillissement de la peau.
+            Elle constitue à cet égard un remarquable soin naturel dont la dimension anti-âge prend effet dès les
+            premières applications.
+          </p>
+          <p>
+            Mais ses bienfaits vont bien au-delà de la quête de l'éternelle jeunesse. L'huile d'argan sublime le teint,
+            elle adoucit et élastique l'épiderme pour lui donner un toucher de velours. Elle restaure la force, la
+            brillance et le volume de la
+            chevelure, et revitalise les ongles cassants.
+            Utilisée en huile de massage, elle met en évidence des propriétés apaisantes et
+            relaxantes qui agissent sur la sphère neuropsychologique pour un effet bien-être démultiplié.
+          </p>
+          <p>
+            L'huile d'argan agit en outre avec efficacité sur de très nombreuses infections de la peau tel l'eczéma,
+            le psoriasis, les vergetures, l'acné, les escarres, et certaines douleurs articulaires.
+            Une utilisation régulière sur le cuir chevelu ralentit entre autres la chute des cheveux.
+            Elle est d'ailleurs utilisée comme un soin médicinal traditionnellement au Maroc (cf. rubrique Huile d'Argan
+            & Santé).
+          </p>
+        </div>
+        <div class="col-lg-4 col-md-12 d-flex justify-content-md-center">
+          <img src="assets/img/Beauty/oil.jpg" alt="argan-oil">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <img src="assets/img/Beauty/argan.jpg" alt="argan-oil" class="img-fluid">
+          <p>
+            L'huile d'argan est un produit 100% pur et naturel. Elle qui peut être utilisée seule ou bien combinée avec
+            d'autres
+            ingrédients au sein des cosmétiques.
+            Un flacon d'huile dure longtemps, car l'huile est très économique.
+          </p>
+          <p>
+            Il est important de choisir une huile issue de l'agriculture biologique. Par conséquent, nous vous
+            recommandons "Ecco Verde" l'huile d'argan de Farfalla, qui porte également la certification
+            "NaTrue". Nos cosmétiques sont garantis 100% bio.
+          </p>
+          <p>
+            L’huile d’argan est incontournable dans les pays du Maghreb.
+            Ses vertus ont aussi conquis l’Occident, depuis le Xème siècle av.
+            J-C grâce aux comptoirs de commerce installés sur la côte Atlantique du Maroc.
+            Aujourd’hui, l’usage des cosmétiques à l’huile d’argan est largement répandu en Europe.
+            Elle est couramment employée pour les soins corporels et capillaires.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--=============== Start section intro ============================-->
+  <!--======================== Section Produits =========================-->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 d-flex justify-content-center">
+          <div class="image">
+            <div class="image-container">
+              <div class="big-img">
+                <img src="assets/img/Beauty/big_img_hammam/service-4-1.jpg" alt="argan-hammam" id="zoom">
+              </div>
+              <div class="small-image">
+                <img src="assets/img/Beauty/big_img_hammam/hamma-products.jpg" alt="hammam">
+                <img src="assets/img/Beauty/big_img_hammam/ghassoul.jpg" alt="hammam">
+                <img src="assets/img/Beauty/big_img_hammam/produit-spec.jpg" alt="hammam">
+              </div>
+            </div>
+            <div class="content">
+              <h2>Hammam</h2>
+              <p>
+                L’huile d’Argan est particulièrement recommandée pour nourrir et adoucir la peau. Non grasse,
+                elle pénètre rapidement et protège de la déshydratation cutanée. Il suffit de quelques gouttes chauffées
+                dans la paume de la main, appliquées là en massant doucement sur la peau ce qui la laissera souple et
+                satinée.
+              </p>
+              <div class="stars">
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container d-flex justify-content-evenly ">
+      <div class="row ">
+        <div class="col-md-4 ">
+          <div class="card">
+            <img class="card-img-top" src="assets/img/Beauty/big_img_hammam/hamma-products.jpg" alt="Card image cap"
+              style: height='290px' class="img-fluid">
+            <div class="card-block">
+              <h4 class="card-title">Hammam pack </h4>
+              <p class="card-text">80 Euro -/ <span>100 Euro</span></p>
+              <p class="contenue"> Tout le secret de la beauté marocaine dans un Coffret Hammam luxueux…
+                Véritable objet à garder et à réutiliser à l'infini, ce coffret entièrement recouvert de simili cuir
+                beige nacré concentre les meilleurs produits pour nettoyer,
+                purifier et nourrir votre peau avec des produits issus de la nature et de la culture Marocaine.</p>
+              <a href="javascript:avoid();" class="readmore-btn btn">En savoir plus</a>
+              <a href="#" data-name="Hammam_pack" data-price="80" class="add-to-cart btn ">Ajouter au panier
+                <i class="fa fa-cart-plus icon"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="assets/img/Beauty/big_img_hammam/ghassoul.jpg" alt="Card image cap" style:
+              height='290px' class="img-fluid">
+            <div class="card-block">
+              <h4 class="card-title">Face mask "Argil"</h4>
+              <p class="card-text">30 Euro -/ <span> 40 Euro </span></p>
+              <p class="contenue"> ARGILE NATURELLE: Le ghassoul est une argile naturelle utilisée depuis des siècles.
+                Cette version du l’argile utilise le ghassoul pur, en y ajoutant les 7 herbes suivantes : Argan, Rose,
+                Lavande, Thym, romarin, camomille et Eucalyptus. Elle amène chacune son lot de bienfaits à la peau et
+                aux cheveux ainsi qu’une senteur et saveur incomparable.Ce rhassoul est extrêmement riche en minéraux et
+                exceptionnellement efficace pour les soins de la peau et les cheveux sous forme de masque visage/cheveux
+                EXCELLENT POUR LES CHEVEUX : L'Argile de Ghassoul soigne les peaux mortes et ternes et stabilise la
+                sécrétion
+                de sébum qui aide à combattre les pellicules. Le ghassoul est très riche en minéraux tels que le
+                magnésium et
+                la silice, ce qui le rend excellent pour le rajeunissement de vos cheveux. Il est en effet connu pour
+                hydrater
+                et conditionner les cheveux, améliorer leur élasticité et les rendre super brillants. L'utiliser comme
+                shampoing
+                est très bénéfique pour le cuir chevelu.</p>
+              <a href="javascript:avoid();" class="readmore-btn btn">En savoir plus</a>
+              <a href="#" data-name="Face_mask_'Argil'" data-price="30" class="add-to-cart btn ">Ajouter au panier
+                <i class="fa fa-cart-plus icon"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="assets/img/Beauty/big_img_hammam/produit-spec.jpg" alt="Card image cap"
+              style: height='290px' class="img-fluid">
+            <div class="card-block">
+              <h4 class="card-title">Huile hydratante</h4>
+              <p class="card-text">20 Euro -/ <span> 35 Euro</span></p>
+              <p class="contenue"> Huile d’Argan 100% Biologiqu Un produit 100% naturel Sa richesse en acides gras
+                essentiels et en vitamines E fait d’elle une huile très nourrissante,
+                régénérante et restructurante pour la peau, les cheveux mais aussi les ongles.Elle est idéale pour les
+                peaux sèches, voire très sèches.
+                Sa forte teneur en antioxydants favorisant la lutte contre le dessèchement de la peau.</p>
+              <a href="javascript:avoid();" class="readmore-btn btn">En savoir plus</a>
+              <a href="#" data-name="Huile_hydratante" data-price="20" class="add-to-cart btn ">Ajouter au panier <i
+                  class="fa fa-cart-plus icon"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 d-flex justify-content-center">
+          <div class="image">
+            <div class="image-container">
+              <div class="hair">
+                <img src="assets/img/Beauty/big_img_hair/hair-img.jpg" alt="argan-hammam" id="zoom1">
+              </div>
+              <div class="small">
+                <img src="assets/img/Beauty/big_img_hair/shampoo.png" alt="hammam">
+                <img src="assets/img/Beauty/big_img_hair/argan-.jpg" alt="hammam">
+                <img src="assets/img/Beauty/big_img_hair/shampoo.jpg" alt="hammam">
+              </div>
+            </div>
+            <div class="content">
+              <h2>Soin des cheveux</h2>
+              <p>
+                l’huile d’argan s’utilise comme un masque capillaire. Il convient de
+                l’appliquer des racines jusqu’aux extrémités des cheveux, puis de laisser reposer une dizaine de
+                minutes.
+              </p>
+
+              <div class="stars">
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="assets/img/Beauty/big_img_hair/shampoo.png" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">Shampoin pour des cheveux sec</h4>
+              <p class="card-text">35 Euro -/ <span> 45 Euro</p>
+              <p class="contenue"> Pour une escale orientale envoûtante le temps d'une douche ou d'un bain,
+                nos chercheurs en Cosmétique Végétale® ont sélectionné et associé deux ingrédients mythiques
+                en provenance du Maroc et issues de plantes en Agriculture Biologique : l'extrait d'Argan et la Rose.
+                La peau est nettoyée en douceur et délicatement parfumée..</p>
+              <a href="javascript:avoid();" class="readmore-btn btn">En savoir plus</a>
+              <a href="#" data-name="Shampoin_pour_des_cheveux_sec" data-price="35" class="add-to-cart btn ">Ajouter au
+                panier <i class="fa fa-cart-plus icon"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="assets/img/Beauty/big_img_hair/shampoo.jpg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">Shampoin pour des cheveux gras</h4>
+              <p class="card-text">25 Euro -/ <span> 40 Euro </span></p>
+              <p class="contenue">Ce shampoing de la marque de référence "Alepeo" est fabriqué selon la méthode
+                traditionnelle des savons d'Alep, sous la supervision d'un maître savonnier syrien.
+                Sa formulation naturelle, très douce pour les cheveux, est basée sur des huiles végétales comme
+                l'huile d'olive et l'huile de baie de laurier. Ce produit de qualité artisanale est garanti :
+                sans graisse animale ni huile de palme.
+                sans parabène,
+                sans colorant,
+                non testé sur les animaux..</p>
+              <a href="javascript:avoid();" class="readmore-btn btn">En savoir plus</a>
+              <a href="#" data-name="Shampoin_pour_des_cheveux_gras" data-price="25" class="add-to-cart btn ">Ajouter au
+                panier
+                <i class="fa fa-cart-plus icon"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="assets/img/Beauty/big_img_hair/argan-.jpg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">Shampoin pour des cheveux très sec</h4>
+              <p class="card-text">70 Euro -/ <span>120 Euro</span></p>
+              <p class="contenue"> Ce shampoing est élaboré à partir d’huile d’argan qui nourrit, répare et protège vos
+                cheveux.
+                Cette huile riche en vitamine A, C et E et en antidoxidants est tirée de l’arganier, un arbre originaire
+                du Maroc.</p>
+              <a href="javascript:avoid();" class="readmore-btn btn">En savoir plus</a>
+              <a href="#" data-name="Shampoin_pour_des_cheveux_très_sec" data-price="70" class="add-to-cart btn">Ajouter
+                au panier
+                <i class="fa fa-cart-plus icon"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="conatiner d-flex justify-content-center">
+      <div class="row">
+        <div class="col">
+          <div class="image">
+            <div class="image-container">
+              <div class="hydratation">
+                <img src="assets/img/Beauty/big-img_skin/face.jpg" alt="argan-hammam" id="zoom2">
+              </div>
+              <div class="sm-img">
+                <img src="assets/img/Beauty/big-img_skin/savon-ghasoul.jpg" alt="hammam">
+                <img src="assets/img/Beauty/big-img_skin/cold-press.jpg" alt="hammam">
+                <img src="assets/img/Beauty/big-img_skin/face-serum.jpg" alt="hammam">
+              </div>
+            </div>
+            <div class="content">
+              <h2>Soin de la peau :</h2>
+              <p>
+                Pour le soin de la peau, l’huile d’argan s’utilise comme une lotion corporelle. Il suffit de déposer
+                quelques gouttes dans le creux de la main puis de l’appliquer sur le visage et le corps.
+                Masser légèrement pour faciliter la pénétration.
+              </p>
+              <div class="stars">
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container d-flex justify-content-center">
+      <div class="row ">
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="assets/img/Beauty/big-img_skin/savon-ghasoul.jpg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">Huile hydratante</h4>
+              <p class="card-text">80 Euro -/ <span>150 Euro</span></p>
+              <p class="contenue"> Pour une PEAU FRAGILE À SÈCHE
+                L’argan, un trésor naturel pour la peau aux bienfaits exceptionnels.
+                Cette huile est réputée riche en antioxydants. C’est pourquoi nous avons décidé de l’ajouter
+                en tant qu’actif dans notre dernière création : le savon à froid “Secret d’argan”, spécialement conçu
+                pour
+                les peaux sèches et fragiles. Il enveloppera votre corps d’un doux parfum d’ylang-ylang et de géranium.
+                Nos savons sont fabriqués avec Amour de façon artisanale : leur forme et leur couleur sont susceptibles
+                de différer légèrement du visuel.
+
+              </p>
+              <a href="javascript:avoid();" class="readmore-btn btn">En savoir plus</a>
+              <a href="#" data-name="Huile_de_bronzage_argane" data-price="25" class="add-to-cart btn">Ajouter au
+                panier<i class="fa fa-cart-plus icon"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="assets/img/Beauty/big-img_skin/cold-press.jpg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">Huile hydratante</h4>
+              <p class="card-text">40 Euro -/ <span> 120 Euro </span></p>
+              <p class="contenue"> 100% Bio et Organique : Cette huile d’argan en provenance du Maroc contient de
+                grandes quantités d’Oméga 6 qui aide
+                à réduire les traces et imperfections et des vitamines E, antioxydants naturels. Ainsi, elle protège la
+                peau contre les effets du vieillissement
+                (rides, etc.) en aidant l’épiderme à rester souple et lisse. Hydratation Intense : L’huile d’argan
+                merveilleuse de The Body
+                Source est très hydratante et peut être utilisée sur la peau du corps et du visage mais aussi le long
+                des cheveux et du cuir chevelu.
+                Elle est également riche en nutriments, ce qui la rend idéale pour une utilisation sur les ongles et
+                cuticules.
+                Huile Saine : Ce produit de beauté est riche en phénol et carotènes pour calmer, restaurer et réparer la
+                peau. De la saponine
+                (antioxydant) a également été ajoutée pour profiter d’une huile encore plus saine. Parfaite pour les
+                peaux sèches, faites-en
+                l’utilisation que vous voulez entre gommage du corps, soin du visage ou masque pour les cheveux.
+                Ethique et Pratique : Cette huile d’argan bio provient du Maroc et n’est pas testée sur les animaux.
+                Elle est livrée dans une magnifique bouteille en ambre noir avec pipette pour une utilisation facile.
+                Nombreux Bienfaits : Pressée à froid, elle ne contient aucune odeur, elle n’est pas grasse et est
+                rapidement absorbée par la peau.
+                De plus, ses effets sont longue durée. Huile organique pure et sans additifs.</p>
+              <a href="javascript:avoid();" class="readmore-btn btn">En savoir plus</a>
+              <a href="#" data-name="Huile_de_bronzage_argane" data-price="25" class="add-to-cart btn">Ajouter au
+                panier<i class="fa fa-cart-plus icon"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 ">
+          <div class="card">
+            <img class="card-img-top" src="assets/img/Beauty/big-img_skin/face-serum.jpg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">Serum anti-âge</h4>
+              <p class="card-text">100 Euro -/ <span> 140 Euro</span></p>
+              <p class="contenue"> Un puissant concentré d’huiles végétales 100% bio :
+                Notre sérum royale PURE HUILE VEGETALE possède une formule magique et unique qui concentre les effets
+                exceptionnels des sept
+                meilleures huiles végétales. Les extraits végétaux issus de toutes ces huiles permettent d’activer des
+                millions de cellules.
+                Ce sérum raffermit, étire et affine naturellement le grain de peau tout en apportant un effet de tenseur
+                immédiat. Sa texture fluide et
+                légère pénètre rapidement, créant un effet seconde peau. Il prévient et améliore les signes des dommages
+                du vieillissement cutané. Chaque
+                fois que vous l’utiliserez, il stimulera les 5 fonctions importantes de la peau (hydratation, nutrition,
+                oxygénation, régénération, protection), essentielles pour une peau entretenue.
+                Dès les premières semaines d’utilisation, vous obtiendrez une peau éblouissante, éclatante et plus
+                ferme.</p>
+              <a href="javascript:avoid();" class="readmore-btn btn">En savoir plus</a>
+              <a href="#" data-name="Huile_de_bronzage_argane" data-price="25" class="add-to-cart btn">Ajouter au
+                panier<i class="fa fa-cart-plus icon"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container d-flex justify-content-center">
+      <div class="row">
+        <div class="col">
+          <div class="image">
+            <div class="image-container">
+              <div class="big">
+                <img src="assets/img/Beauty/big_img_beach/bronze.jpg" alt="argan-hammam" id="zoom3">
+              </div>
+              <div class="pic">
+                <img src="assets/img/Beauty/big_img_beach/beach-argan.jpg" alt="hammam">
+                <img src="assets/img/Beauty/big_img_beach/argan-.png" alt="hammam">
+                <img src="assets/img/Beauty/big_img_beach/Moroccan-Argan-Oil.jpg" alt="hammam">
+              </div>
+            </div>
+            <div class="content">
+              <h2>Plage et branzage</h2>
+              <p>
+                En été, l’argan peut être utilisé en huile coiffante pour
+                réhydrater vos cheveux desséchés après une exposition au soleil ou après la plage
+              </p>
+              <div class="stars">
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container d-flex justify-content-center">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="assets/img/Beauty/big_img_beach/beach-argan.jpg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">Huile de bronzage incarose</h4>
+              <p class="card-text">20 Euro -/ <span>40 Euro</span></p>
+              <p class="contenue"> Made with organic argan oil, this tanning product is the ideal element to achieve
+                radiant skin even for prolonged
+                exposure to sunlight. This Argan tanning oil is rich in vitamin E which is an amazing
+                protection against sunburns, dark spots and the development of wrinkles. In addition, it provides a
+                beautiful tan and skin tone.</p>
+              <a href="javascript:avoid();" class="readmore-btn btn">En savoir plus</a>
+              <a href="#" data-name="Huile_de_bronzage_argane" data-price="25" class="add-to-cart btn">Ajouter au
+                panier<i class="fa fa-cart-plus icon"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="assets/img/Beauty/big_img_beach/argan-.png" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">Huile de bronzage argan</h4>
+              <p class="card-text">25 Euro -/ <span> 35 Euro </span></p>
+              <p class="contenue"> Riche en vitamine E et en carotène, cette huile d’argan pour le bronzage est un
+                excellent allié pour bronzer rapidement
+                et intensément.</p>
+              <a href="javascript:avoid();" class="readmore-btn btn">En savoir plus</a>
+              <a href="#" data-name="Huile_de_bronzage_argane" data-price="25" class="add-to-cart btn">Ajouter au
+                panier<i class="fa fa-cart-plus icon"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="assets/img/Beauty/big_img_beach/Moroccan-Argan-Oil.jpg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">Huile de bronzage sunsublim</h4>
+              <p class="card-text">50 Euro -/ <span> 85 Euro</span></p>
+              <p class="contenue"> Huile d'Argan Bio 100% pure, VISAGE,CHEVEUX, CORPS non torréfiée, extraite à froid,
+                non raffinée,
+                Soin anti-age visage et cheveux Bronzage sublime et unifié</p>
+              <a href="javascript:avoid();" class="readmore-btn btn">En savoir plus</a>
+              <a href="#" data-name="Huile_de_bronzage_argane" data-price="25" class="add-to-cart btn">Ajouter au
+                panier<i class="fa fa-cart-plus icon"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container d-flex justify-content-center">
+      <div class="row">
+        <div class="col">
+          <div class="image">
+            <div class="image-container">
+              <div class="picture">
+                <img src="assets/img/Beauty/big_img_medical/massage.jpg" alt="argan-hammam" id="zoom4">
+              </div>
+              <div class="pics">
+                <img src="assets/img/Beauty/big_img_medical/vitamenE.jpg" alt="hammam">
+                <img src="assets/img/Beauty/big_img_medical/moroccan-argan.jpg" alt="hammam">
+                <img src="assets/img/Beauty/big_img_medical/naturactive-chev-ongl-3moishle-argan-off.jpg" alt="hammam">
+              </div>
+            </div>
+            <div class="content">
+              <h2>Medical</h2>
+              <p>
+                Cette huile originaire du Maroc, riche en vitamines E et en insaponifiables. Elle est réputée pour ses
+                propriétés nourrissantes, régénérantes et restructurantes.
+                Sa teneur en antioxydants en fait un actif idéal pour lutter contre les signes du vieillissement cutané,
+                et ses acides gras redonnent souplesse et douceur aux peaux sèches et dénutries.
+              </p>
+              <div class="stars">
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container d-flex justify-content-center">
+      <div class="row ">
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top"
+              src="assets/img/Beauty/big_img_medical/naturactive-chev-ongl-3moishle-argan-off.jpg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">Huile Végétale</h4>
+              <p class="card-text">80 Euro -/ <span>130 Euro</span></p>
+              <p class="contenue"> Pression des amandons des noix de l’arganier, 100% naturelle
+                Une huile anti-ge, réparatrice et protectrice cutanée
+                Nom latin: Argania spinosa
+                Usage oral: 10 g (1 cuillère à soupe) par jour
+                Riche en vitamines et antioxydants
+                Usage cosmétique: Convient particulièrement aux peaux matures ou fragilisées
+                S’utilise pour protéger la peau du vieillissement, fortifier les ongles fragiles et cassants</p>
+              <a href="javascript:avoid();" class="readmore-btn btn">En savoir plus</a>
+              <a href="#" data-name="Huile_Végétale" data-price="80" class="add-to-cart btn ">Ajouter au panier<i
+                  class="fa fa-cart-plus icon"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 ">
+          <div class="card">
+            <img class="card-img-top" src="assets/img/Beauty/big_img_medical/moroccan-argan.jpg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">Anti-chute</h4>
+              <p class="card-text">150 Euro -/ <span> 170 Euro </span></p>
+              <p class="contenue"> Le sérum « be artisan » à l’huile d’argan est un excellent soin pour cheveux abîmés.
+                Sa texture non grasse assure une protection contre les agressions extérieures et préserve ainsi la
+                brillance naturelle de la chevelure et l’éclat de la couleur.
+                Grace aux propriétés de l’huile essentielle de romarin ce sérum est considérée comme antipelliculaire et
+                anti chute des cheveux par excellence.</p>
+              <a href="javascript:avoid();" class="readmore-btn btn">En savoir plus</a>
+              <a href="#" data-name="Anti_chute" data-price="150" class="add-to-cart btn ">Ajouter au panier<i
+                  class="fa fa-cart-plus icon"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="assets/img/Beauty/big_img_medical/vitamenE.jpg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">Vitamine E</h4>
+              <p class="card-text">40 Euro -/ <span> 95 Euro</span></p>
+              <p class="contenue"> Riche en vitamine E bio pour le renouvellement cellulaire, riche en vitamine E,
+                antioxydant naturel reconnu pour combattre
+                les radicaux libres et ainsi les effets du vieillissement. Conditionné dans un flacon ambré 80 ml, fermé
+                d'une pompe goutte à goutte.</p>
+              <a href="javascript:avoid();" class="readmore-btn btn">En savoir plus</a>
+              <a href="#" data-name="Vitamine_E" data-price="40" class="add-to-cart btn ">Ajouter au panier<i
+                  class="fa fa-cart-plus icon"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- ======= Bannier Section ======= -->
+  <section id="offer" class="offer mt-5">
+    <div class="container py-5 ">
+      <div class="text-center" data-aos="zoom-in">
+        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+          tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalToggleLabel ">Benificiez de cette offre a <span>150 Euro</span>
+                  de vos achats</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p class="text-center">Offre Duo Relaxation</p>
+                <ul class="duo-offer">
+                  <li><i class="fa fa-angle-double-right"></i>Relaxation au Hammam</li>
+                  <li><i class="fa fa-angle-double-right"></i>Massage Relaxant 50 minutes</li>
+                </ul>
+              </div>
+              <div class="modal-body ">
+                <div class="row">
+                  <div class="col-md-12">
+                    <img src="assets/img/Beauty/offre/great_offer.jpg" alt="offre" class="img-fluid">
+                  </div>
+                  <div class="col-md-6">
+                    <img src="assets/img/Beauty/offre/bano-hammam.jpg" alt="offre" class="img-fluid">
+                  </div>
+                  <div class="col-md-6">
+                    <img src="assets/img/Beauty/offre/super.jpg" alt="offre" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"
+                  data-bs-dismiss="modal">Eh encore plus </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+          tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalToggleLabel2">Offre de deux packs de produits d'Argan + le
+                  Hammam avec des produits d'argan bio et pur apartir de <span>300 Euro</span> d'achats sur notre site
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-12">
+                    <img src="assets/img/Beauty/offre/offre-mag.jpg" alt="offre" class="img-fluid">
+                  </div>
+                  <div class="col-md-6">
+                    <img src="assets/img/Beauty/offre/Coffret_huile_70.jpg" alt="offre" class="img-fluid">
+                  </div>
+                  <div class="col-md-6">
+                    <img src="assets/img/Beauty/offre/Pack-Hamame2-1024x670.png" alt="offre" class="img-fluid">
+                  </div>
+                  <div class="col-md-12">
+                    <img src="assets/img/Beauty/offre/vip.jpg" alt="offre" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"
+                  data-bs-dismiss="modal">Retour au premier offre</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="btn offer-btn" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Offre Spécial de cette
+          semaine</a>
+      </div>
+    </div>
+  </section><!-- End bannier Section -->
+  <div class="container my-5">
+    <div id="citation">
+      <div class="container pt-2">
+        <div class="row bg animate-in-down">
+          <div class="p-0 col-md-6">
+            <div class="carousel slide" data-ride="carousel" id="carousel1">
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active"> <img class="d-block img-fluid w-100"
+                    src="assets/img/Beauty/woman-argan.jpg" alt="femme-d-argan" data-holder-rendered="true"></div>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 col-md-6 align-self-center sitation">
+            <p class="m-0">Depuis le 13e siècle, les femmes berbères d'Afrique du Nord fabriquent de l'huile d'argan à
+              des fins culinaires et cosmétiques.</p>
+            <p class="m-0">C'est grace aux femmes berbére que nous avons pu garder ce trésore qui s'appelle l'Argan.
+            </p>
+            <h2 class="text-center pt-5 ">Merci...!</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  <!-- Termes & Conditions -->
+  <div class="container my-5 py-4">
+    <div class="about-text p-5 border text-center">
+      <h2 class="animate__animated animate__bounce">Suivez-nous !</h2>
+      <hr>
+      <img src="assets/img/Beauty/gif-argane.gif" class="img-tot py-4 img-fluid" alt="gif">
+      <div class="about-text  text-center">
+        <div class="row pb-1">
+          <div class="col-sm-4 pb-5 text-center ">
+            <h3 class="pb-4 animate__animated animate__bounce">Newsletter</h3>
+            <form action="" method="post">
+              <input type="text" placeholder="exemple@gmail.com">
+              <button type="button" class="btn btn-outline-dark ">s'inscrire</button>
+            </form>
+          </div>
+          <div class="col-sm-4 col-md-4">
+            <h3>Contact</h3>
+            <i class="fa fa-youtube-play" style="font-size:30px"></i>
+            <i class="fa fa-facebook" style="font-size:30px"></i>
+            <i class="fa fa-instagram" style="font-size:30px"></i>
+            <i class="fa fa-twitter" style="font-size:30px"></i>
+          </div>
+          <div class="col-sm-4 col-md-4">
+            <h3>Service Client</h3>
+            <div class="service text-center">
+              <p>Question?</p>
+              <p>Mon compte</p>
+              <p>Termes et conditions</p>
+              <p>Information de livraisons</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer py-2">
+    <p class="text-dark text-center"> Copyright ©Jameela 2021. Tous droits réservés.</p>
+    <!-- <p class="text-dark text-center">Réalisé par Meryem, Flavie, Anne, et Cécile</p> -->
+  </footer>
+
+  <!--====================== Modal Panier =====================-->
+  <!-- Modal -->
+  <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Votre panier</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="show-cart table">
+          </table>
+          <div>Prix Total: <span class="total-cart"></span> €</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="close-cart btn btn-secondary" data-dismiss="modal">Fermer</button>
+          <button type="button" class="pay-cart btn btn-primary">Commander</button>
+          <button class="clear-cart btn btn-danger">Vider le Panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Jquiery CDN -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+  <!-- pour afficher la modal -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+    integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+    integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous">
+    </script>
+  <!-- pour l autocomplete -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <!-- pour le zoom des photos -->
+  <script src="assets/js/zoomsl.min.js"></script>
+  <!-- le main js de ma page -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

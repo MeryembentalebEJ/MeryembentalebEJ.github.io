@@ -1,0 +1,125 @@
+
+body{
+    font-family: "Chillax-Regular";
+    height: 100rem;
+}
+/*===================== changement Header page ================*/
+header .icons i:hover, header .icons a:hover{
+    color: #d8e2dcff;
+}
+#search-box{
+  background: #d8e2dcff;
+}
+header .navbar a:hover{
+  color: #d8e2dcff;
+}
+@media (max-width:991px){
+        header .navbar.nav-toggle{
+        background-color: rgba(216, 226, 220, 0.8);
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}
+/*======================= Banniere =====================*/
+    .bg {
+    background-size: cover;    
+    position: relative;
+    background-attachment: fixed;
+    background-image: url("../img/Sunglasses/blue.jpeg");
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bg h2 {
+    color: #eee;
+    margin-bottom: 40px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+.bg h1{
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+    padding-top: 26vh;
+}
+.bg h2 {
+    color: #eee;
+    margin-bottom: 40px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+.btn-get-started {
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+    text-decoration: none;
+}
+.btn-get-started:hover {
+    background:#04cdfa;
+    border: 2px solid #04cdfa;
+}
+h2,h3{
+    font-family: "Chillax-Medium";
+    }
+/*======================= Produits =====================*/
+.card{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+.card:hover{
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.7);
+}
+.card-img-top {
+align-self: center;
+}
+h2{
+    font-size: 28px;
+}
+.btn-outline-danger{
+    margin: 1%;
+    color: #fec5bb;
+    border-color: #fec5bb;
+}
+.btn-outline-danger:hover{
+    background-color:  #ffe5d9;
+    border-color: #ffe5d9;
+}
+.btn-outline-secondary{
+    margin: 1%;
+    color: #a7d8bb;
+    border-color: #a7d8bb;
+}
+.btn-outline-secondary:hover{
+    background-color:  #d8e2dc;
+    border-color: #d8e2dc;
+}
+.Rebecca, .Simone, .Katty, .Louise, .Betty{
+    background-color: #f8f1f0;
+    border: white 10px solid;
+}
+@media (max-width: 736px) {
+.img-cat {
+    width: 250px;
+    height: auto;
+}
+}
+

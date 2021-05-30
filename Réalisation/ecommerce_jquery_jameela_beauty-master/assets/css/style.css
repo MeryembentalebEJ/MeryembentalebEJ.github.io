@@ -1,0 +1,133 @@
+body{
+    font-family: "Chillax-Regular";
+    height: 100rem;
+}
+/* Couleur de fond menu header responsif*/
+@media (max-width:991px){
+     header .navbar.nav-toggle{
+        transform: scaleY(1);
+        opacity: 1;
+        background-color:  rgba(255, 215, 186, 0.8);
+    }
+}
+/* Banniere */
+#hero {
+    width: 100%;
+    height: 80vh;
+    background: url("../img/Acceuil/girl-2436545_1920.jpeg") center center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+    #hero .container {
+    padding-top: 80px;
+}
+    #hero:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+    #hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+}
+    #hero h2 {
+    color: #eee;
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Chillax-Light";
+    letter-spacing: 0.5px;
+    /* text-transform: uppercase; */
+}
+    #hero .btn-get-started {
+    font-family: "Chillax-Semibold";
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    }
+    #hero .btn-get-started:hover {
+    background: #005a30;
+    border: 2px solid #005a30;
+    }
+    h2,h3{
+    font-family: "Chillax-Medium";
+    }
+
+    /* Gallary search filter */
+.img-follow {
+    width: 400px;
+    height: auto; 
+}
+/* mediaQueries banniere */
+@media (min-width: 1024px) {
+    #hero {
+        background-attachment: fixed;
+    }
+}
+@media (max-width: 768px) {
+    #hero {
+    height: 100vh;
+    }
+    #hero .container {
+    padding-top: 60px;
+    }
+    #hero h1 {
+    font-size: 32px;
+    line-height: 36px;
+    }
+}
+@media (max-width: 736px) {
+.img-follow {
+    width: 250px;
+    height: auto;
+}
+}
+  /* Gallary search filter */
+.card{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+.card:hover{
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.7);
+}
+
+.section-title {
+    margin: 50px 0px 50px 0px;
+}
+.section-title h2 {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#portfolio .portfolio-list {
+    margin-bottom: 50px;
+}
+
+.portfolio-thumbnail img {
+    width:400px;
+    height: 230px;
+}
+.btn-warning{
+background-color: #ffd7ba;
+border-color: #ffd7ba;
+}

@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jameela website (e-commerce) page tote bags</title>
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <!-- animation -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <!-- Animated CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- Lien pour les font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- CSS file génaral -->
+  <link rel="stylesheet" href="assets/css/style_géneral.css">
+  <!-- CSS file page -->
+  <link rel="stylesheet" href="assets/css/style_tote_bage.css">
+  <!-- Jq ui pour l autocomplete -->
+  <link rel="stylesheet" href="assets/css/jq-ui.css">
+</head>
+
+<body>
+  <!--==================== Start Header avec la navbar ======================-->
+  <header>
+    <div id="menu" class="fa fa-diamond"></div>
+    <a href="#" class="logo"><img src="assets/img/totebages/logo_anne.png" src="" alt="logo" height="100"
+        width="auto"></a>
+    <nav class="navbar">
+      <a href="index.html">Accueil</a>
+      <a href="beauty.html">Beauty</a>
+      <a href="tote-bags.html">Tote bags</a>
+      <a href="Sunglasses.html">Sunglasses</a>
+      <a href="swimsuits.html">Swimsuits</a>
+      <a href="contact.html">Contact</a>
+
+    </nav>
+    <div class="icons">
+      <i class="fa fa-search" id="search-icon"></i>
+      <i class="fa fa-user-circle-o icon" id="user"></i>
+      <i class="fa fa-cart-plus icon" data-toggle="modal" data-target="#cart">(<span class="total-count"></span>)</i>
+    </div>
+
+    </div>
+    <form id="search-box">
+      <input type="search" id="search" placeholder="Search here">
+      <label for="search" class="fa fa-search" style="font-size:20px"></label>
+    </form>
+  </header>
+  <!--==================== End Header avec la navbar ======================-->
+  <!--====================== Start login and sing in =======================-->
+  <div class="form">
+    <!-- login -->
+    <div class="login-form">
+      <!-- cancel btn -->
+      <a href="#" class="form-cancel">
+        <i class="fa fa-times"></i>
+      </a>
+      <!-- heading! -->
+      <strong>Log In</strong>
+      <!-- Inputs -->
+      <form>
+        <input type="email" placeholder="Exemple@gmail.com" name="email" required>
+        <input type="password" placeholder="Mot de passe" name="password" required>
+        <!-- submit btn -->
+        <input type="submit" value="Log In">
+      </form>
+      <!-- forget and sing up btn -->
+      <div class="form-btns">
+        <a href="#" class="forget">Mot de passe oublié?</a>
+        <a href="#" class="sign-up-btn">Creer un compte</a>
+      </div>
+    </div>
+    <!-- Sing Up -->
+    <div class="sign-up-form">
+      <!-- cancel btn -->
+      <a href="#" class="form-cancel">
+        <i class="fa fa-times"></i>
+      </a>
+      <!-- heading! -->
+      <strong>Sign Up</strong>
+      <!-- Inputs -->
+      <form>
+        <input type="text" placeholder="Nom et Prénom" name="fullName" required>
+        <input type="email" placeholder="Exemple@gmail.com" name="email" required>
+        <input type="password" placeholder="Mot de passe" name="password" required>
+        <!-- submit btn -->
+        <input type="submit" value="Sing Up">
+      </form>
+      <!-- forget and sign up btn -->
+      <div class="form-btns">
+        <a href="#" class="Already-acount">Avez-vous déjà un compte?</a>
+      </div>
+    </div>
+  </div>
+  <!--=================== End log in and sing in  form ================-->
+
+
+  <!-- CAROUSEL -->
+
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="assets/img/totebages/annisa-ica-U6CAOHNDvO4-unsplash.jpg" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="assets/img/totebages/justin-buisson-1RrWo9gsioo-unsplash.jpg"
+          alt="Second slide">
+        <!-- <div class="carousel-item">
+          <img class="d-block w-100" src="assets/img/totebages/cabas-broderie-citron-1.jpg" alt="Third slide">
+        </div> -->
+      </div>
+    </div>
+    <!------------------------- Presentation ------------------------->
+    <div class="container my-5 d-grid gap-5 pt-4">
+      <div class="about-text p-5 border text-center">
+        <h2 class="text animated bounce">Tote-Bag</h2>
+        <hr>
+        <p class="py-4">Jameela vous propose depuis 2010, des <b>tote bags originaux</b>, réalisés en collaboration avec
+          de jeunes artistes. Les tote bag sont 100% coton, 180g/m², ce qui en fait les plus solides du marché. Ils sont
+          réutilisables pendant des années. L'impression est réalisée en France par un véritable imprimeur. Le tissage
+          est
+          produit dans Les Vosges, bassin textile reconnu en France, par une entreprise familiale au savoir-faire datant
+          de plus de 100 ans. La fabrication s'inscrit dans une démarche de développement durable depuis la sélection du
+          coton au tissage. La matière première est produite dans le respect de l’être humain et de son environnement,
+          la
+          filature et le tissage utilisent une énergie verte : <b>l’hydroélectricité</b>.</p>
+        <img src="assets/img/totebages/1b5794850bc5a1fb0ea0dd6b0cfd6978.gif" class="w-25" alt="tote-bag">
+      </div>
+    </div>
+    <!-- COLLECTION  -->
+    <h2 class="p-3 text-center text animated bounce">Collection</h2>
+    <hr>
+    <!-- produit 1  -->
+    <div class="container-fluid">
+      <!-- <div class="about-text text-center "> -->
+      <div class="row text-center">
+        <div class="col-6 col-md-4 d-flex justify-content-center">
+          <div class="card mb-4 py-2" style="width: 20rem;">
+            <img class="card-img-top align-content-center"
+              src="assets/img/totebages/1423afdc570240d964f18836226bfe61.jpg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title text-center">The Totorro</h4>
+              <p>Tissé et imprimé en France. Sac résistant en coton avec impression.
+              </p>
+              <p class="card-text text-center">15€</p>
+              <a href="#" data-name="The_Totorro" data-price="15"
+                class="add-to-cart btn btn-dark align-content-center">Ajouter</a>
+              <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+                En savoir plus
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Modal 1 -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Votre Choix</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Fabrication française. Tissé et imprimé en France.
+                  Sac résistant en coton avec impression.</p>
+                <ul>
+                  <li>100% coton</li>
+                  <li>180gr/m2</li>
+                  <li>37cm x 40cm</li>
+                  <li>Anses de 64cm</li>
+                </ul>
+                <img src="https://media.tenor.com/images/e070868fc12325e760f839eeaf5338aa/tenor.gif" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- produit 2  -->
+        <div class="col-6 col-md-4 d-flex justify-content-center">
+          <div class="card mb-4 py-2" style="width: 20rem;">
+            <img class="card-img-top w-auto" src="assets/img/totebages/2.jpeg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title text-center">The Black</h4>
+              <p>Tissé et imprimé en France. Sac résistant en coton avec impression.
+              </p>
+              <p class="card-text text-center">15€</p>
+              <a href="#" data-name="The_Black" data-price="15" class="add-to-cart btn btn-dark">Ajouter</a>
+              <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+                En savoir plus
+              </button>
+            </div>
+            <!-- Modal 2 -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">TOTE BAG "THE BLACK"</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Fabrication française. Tissé et imprimé en France.
+                      Sac résistant en coton avec impression.</p>
+                    <ul>
+                      <li>100% coton</li>
+                      <li>180gr/m2</li>
+                      <li>37cm x 40cm</li>
+                      <li>Anses de 64cm</li>
+                    </ul>
+                    <img src="https://media.tenor.com/images/e070868fc12325e760f839eeaf5338aa/tenor.gif" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- produit 3  -->
+          </div>
+        </div>
+        <div class="col-6 col-md-4 d-flex justify-content-center">
+          <div class="card mb-4 py-2" style="width: 20rem;">
+            <img class="card-img-top" src="assets/img/totebages/25548-77ea5f654d4b414d84562bada7405bec_525x.jpg"
+              alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title text-center">The Books</h4>
+              <p class="h6 ml-2">Tissé et imprimé en France. Sac résistant en coton avec impression.
+              </p>
+              <p class="card-text text-center">15€</p>
+              <a href="#" data-name="The_Books" data-price="15" class="add-to-cart btn btn-dark">Ajouter</a>
+              <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+                En savoir plus
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Modal 3 -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Votre Choix</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Fabrication française. Tissé et imprimé en France.
+                  Sac résistant en coton avec impression.</p>
+                <ul>
+                  <li>100% coton</li>
+                  <li>180gr/m2</li>
+                  <li>37cm x 40cm</li>
+                  <li>Anses de 64cm</li>
+                </ul>
+                <img src="https://media.tenor.com/images/e070868fc12325e760f839eeaf5338aa/tenor.gif" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- produit 4  -->
+        <div class="col-6 col-md-4 d-flex justify-content-center">
+          <div class="card mb-4 py-2" style="width: 20rem;">
+            <img class="card-img-top" src="assets/img/totebages/tot1.jpeg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title text-center">The Green</h4>
+              <p>Tissé et imprimé en France. Sac résistant en coton avec impression.</p>
+              <p class="card-text text-center">15€</p>
+              <a href="#" data-name="The_Green" data-price="15" class="add-to-cart btn btn-dark">Ajouter</a>
+              <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+                En savoir plus
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Modal 4 -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Votre Choix</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Fabrication française. Tissé et imprimé en France.
+                  Sac résistant en coton avec impression.</p>
+                <ul>
+                  <li>100% coton</li>
+                  <li>180gr/m2</li>
+                  <li>37cm x 40cm</li>
+                  <li>Anses de 64cm</li>
+                </ul>
+                <img src="https://media.tenor.com/images/e070868fc12325e760f839eeaf5338aa/tenor.gif" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- produit 5  -->
+        <div class="col-6 col-md-4 d-flex justify-content-center">
+          <div class="card mb-4 py-2" style="width: 20rem;">
+            <img class="card-img-top" src="assets/img/totebages/tot2.jpeg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title text-center">The Librarian</h4>
+              <p>Tissé et imprimé en France. Sac résistant en coton avec impression.
+              </p>
+              <p class="card-text text-center">15€</p>
+              <a href="#" data-name="The_Librarian" data-price="15" class="add-to-cart btn btn-dark">Ajouter</a>
+              <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+                En savoir plus
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Modal 5 -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Votre Choix</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Fabrication française. Tissé et imprimé en France.
+                  Sac résistant en coton avec impression.</p>
+                <ul>
+                  <li>100% coton</li>
+                  <li>180gr/m2</li>
+                  <li>37cm x 40cm</li>
+                  <li>Anses de 64cm</li>
+                </ul>
+                <img src="https://media.tenor.com/images/e070868fc12325e760f839eeaf5338aa/tenor.gif" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- produit 6  -->
+        <div class="col-6 col-md-4 d-flex justify-content-center">
+          <div class="card mb-4 py-2" style="width: 20rem;">
+            <img class="card-img-top" src="assets/img/totebages/tot3.jpeg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title text-center">The Wood</h4>
+              <p class="h6 ml-2">Tissé et imprimé en France. Sac résistant en coton avec impression.
+              </p>
+              <p class="card-text text-center">15€</p>
+              <a href="#" data-name="The_Wood" data-price="15" class="add-to-cart btn btn-dark">Ajouter</a>
+              <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+                En savoir plus
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Modal 6 -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Votre Choix</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Fabrication française. Tissé et imprimé en France.
+                  Sac résistant en coton avec impression.</p>
+                <ul>
+                  <li>100% coton</li>
+                  <li>180gr/m2</li>
+                  <li>37cm x 40cm</li>
+                  <li>Anses de 64cm</li>
+                </ul>
+                <img src="https://media.tenor.com/images/e070868fc12325e760f839eeaf5338aa/tenor.gif" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- produit 7  -->
+        <div class="col-6 col-md-4 d-flex justify-content-center">
+          <div class="card mb-4 py-2" style="width: 20rem;">
+            <img class="card-img-top" src="assets/img/totebages/tot4.jpeg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title text-center">But first, Coffee</h4>
+              <p class="h6 ml-2">Tissé et imprimé en France. Sac résistant en coton avec impression.
+              </p>
+              <p class="card-text text-center">15€</p>
+              <a href="#" data-name="But_first_Coffe" data-price="15" class="add-to-cart btn btn-dark">Ajouter</a>
+              <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+                En savoir plus
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Modal 7-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Votre Choix</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Fabrication française. Tissé et imprimé en France.
+                  Sac résistant en coton avec impression.</p>
+                <ul>
+                  <li>100% coton</li>
+                  <li>180gr/m2</li>
+                  <li>37cm x 40cm</li>
+                  <li>Anses de 64cm</li>
+                </ul>
+                <img src="https://media.tenor.com/images/e070868fc12325e760f839eeaf5338aa/tenor.gif" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- produit 8  -->
+        <div class="col-6 col-md-4 d-flex justify-content-center">
+          <div class="card mb-4 py-2" style="width: 20rem;">
+            <img class="card-img-top" src="assets/img/totebages/anna-elizabeth-yiLlxHbhx0E-unsplash.jpg"
+              alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title text-center">The Sorority</h4>
+              <p class="h6 ml-2">Tissé et imprimé en France. Sac résistant en coton avec impression.
+              </p>
+              <p class="card-text text-center">15€</p>
+              <a href="#" data-name="The_Sorority" data-price="15" class="add-to-cart btn btn-dark">Ajouter</a>
+              <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+                En savoir plus
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Modal 8 -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Votre Choix</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Fabrication française. Tissé et imprimé en France.
+                  Sac résistant en coton avec impression.</p>
+                <ul>
+                  <li>100% coton</li>
+                  <li>180gr/m2</li>
+                  <li>37cm x 40cm</li>
+                  <li>Anses de 64cm</li>
+                </ul>
+                <img src="https://media.tenor.com/images/e070868fc12325e760f839eeaf5338aa/tenor.gif" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- produit 9  -->
+        <div class="col-6 col-md-4 d-flex justify-content-center">
+          <div class="card mb-4 py-2" style="width: 20rem;">
+            <img class="card-img-top" src="assets/img/totebages/1.jpeg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title text-center">The Classic</h4>
+              <p class="h6 ml-2">Tissé et imprimé en France. Sac résistant en coton avec impression.
+              </p>
+              <p class="card-text text-center">15€</p>
+              <a href="#" data-name="The_Classic" data-price="15" class="add-to-cart btn btn-dark">Ajouter</a>
+              <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+                En savoir plus
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Modal 9-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Votre Choix</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Fabrication française. Tissé et imprimé en France.
+                  Sac résistant en coton avec impression.</p>
+                <ul>
+                  <li>100% coton</li>
+                  <li>180gr/m2</li>
+                  <li>37cm x 40cm</li>
+                  <li>Anses de 64cm</li>
+                </ul>
+                <img src="https://media.tenor.com/images/e070868fc12325e760f839eeaf5338aa/tenor.gif" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- produit 10  -->
+        <div class="col-6 col-md-4 d-flex justify-content-center">
+          <div class="card mb-4 py-2" style="width: 20rem;">
+            <img class="card-img-top" src="assets/img/totebages/6.jpeg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title text-center">The Dog</h4>
+              <p class="h6 ml-2">Tissé et imprimé en France. Sac résistant en coton avec impression.
+              </p>
+              <p class="card-text text-center">15€</p>
+              <a href="#" data-name="The_Dog" data-price="15" class="add-to-cart btn btn-dark">Ajouter</a>
+              <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+                En savoir plus
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Modal 10 -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Votre Choix</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Fabrication française. Tissé et imprimé en France.
+                  Sac résistant en coton avec impression.</p>
+                <ul>
+                  <li>100% coton</li>
+                  <li>180gr/m2</li>
+                  <li>37cm x 40cm</li>
+                  <li>Anses de 64cm</li>
+                </ul>
+                <img src="https://media.tenor.com/images/e070868fc12325e760f839eeaf5338aa/tenor.gif" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- produit 11  -->
+        <div class="col-6 col-md-4 d-flex justify-content-center">
+          <div class="card mb-4 py-2" style="width: 20rem;">
+            <img class="card-img-top" src="assets/img/totebages/Alessandra Olanow.jpeg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title text-center">The Brown Soda</h4>
+              <p class="h6 ml-2">Tissé et imprimé en France. Sac résistant en coton avec impression.
+              </p>
+              <p class="card-text text-center">15€</p>
+              <a href="#" data-name="The_Brown_Soda" data-price="15" class="add-to-cart btn btn-dark">Ajouter</a>
+              <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+                En savoir plus
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Modal 11-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Votre Choix</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Fabrication française. Tissé et imprimé en France.
+                  Sac résistant en coton avec impression.</p>
+                <ul>
+                  <li>100% coton</li>
+                  <li>180gr/m2</li>
+                  <li>37cm x 40cm</li>
+                  <li>Anses de 64cm</li>
+                </ul>
+                <img src="https://media.tenor.com/images/e070868fc12325e760f839eeaf5338aa/tenor.gif" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- produit 12  -->
+        <div class="col-6 col-md-4 d-flex justify-content-center">
+          <div class="card mb-4 py-2" style="width: 20rem;">
+            <img class="card-img-top" src="assets/img/totebages/Recipe Bags - Design Crush.jpeg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title text-center">The Bolognese</h4>
+              <p class="h6 ml-2">Tissé et imprimé en France. Sac résistant en coton avec impression.
+              </p>
+              <p class="card-text text-center">15€</p>
+              <a href="#" data-name="The_Bolognese" data-price="15" class="add-to-cart btn btn-dark">Ajouter</a>
+              <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+                En savoir plus
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Modal 12-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Votre Choix</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Fabrication française. Tissé et imprimé en France.
+                  Sac résistant en coton avec impression.</p>
+                <ul>
+                  <li>100% coton</li>
+                  <li>180gr/m2</li>
+                  <li>37cm x 40cm</li>
+                  <li>Anses de 64cm</li>
+                </ul>
+                <img src="https://media.tenor.com/images/e070868fc12325e760f839eeaf5338aa/tenor.gif" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- produit 13  -->
+        <div class="col-6 col-md-4 d-flex justify-content-center">
+          <div class="card mb-4 py-2" style="width: 20rem;">
+            <img class="card-img-top"
+              src="assets/img/totebages/ssrco,tote,cotton,canvas_creme,flatlay,tall_portrait,750x1000-bg,f8f8f8.1.jpg"
+              alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title text-center">The Faces</h4>
+              <p class="h6 ml-2">Tissé et imprimé en France. Sac résistant en coton avec impression.
+              </p>
+              <p class="card-text text-center">15€</p>
+              <a href="#" data-name="The_Faces" data-price="15" class="add-to-cart btn btn-dark">Ajouter</a>
+              <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+                En savoir plus
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Modal 13-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Votre Choix</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Fabrication française. Tissé et imprimé en France.
+                  Sac résistant en coton avec impression.</p>
+                <ul>
+                  <li>100% coton</li>
+                  <li>180gr/m2</li>
+                  <li>37cm x 40cm</li>
+                  <li>Anses de 64cm</li>
+                </ul>
+                <img src="https://media.tenor.com/images/e070868fc12325e760f839eeaf5338aa/tenor.gif" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- produit 14  -->
+        <div class="col-6 col-md-4 d-flex justify-content-center">
+          <div class="card mb-4 py-2" style="width: 20rem;">
+            <img class="card-img-top" src="assets/img/totebages/table-of-paper-sizes-tote-bag.jpg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title text-center">The Maths</h4>
+              <p class="h6 ml-2">Tissé et imprimé en France. Sac résistant en coton avec impression.
+              </p>
+              <p class="card-text text-center">15€</p>
+              <a href="#" data-name="The_Maths" data-price="15" class="add-to-cart btn btn-dark">Ajouter</a>
+              <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+                En savoir plus
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Modal 14-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Votre Choix</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Fabrication française. Tissé et imprimé en France.
+                  Sac résistant en coton avec impression.</p>
+                <ul>
+                  <li>100% coton</li>
+                  <li>180gr/m2</li>
+                  <li>37cm x 40cm</li>
+                  <li>Anses de 64cm</li>
+                </ul>
+                <img src="https://media.tenor.com/images/e070868fc12325e760f839eeaf5338aa/tenor.gif" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- produit 15  -->
+        <div class="col-6 col-md-4 d-flex justify-content-center">
+          <div class="card mb-4 py-2" style="width: 20rem;">
+            <img class="card-img-top" src="assets/img/totebages/Marcdorcel.jpg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title text-center">The Marc Dorcel</h4>
+              <p class="h6 ml-2">Tissé et imprimé en France. Sac résistant en coton avec impression.
+              </p>
+              <p class="card-text text-center">15€</p>
+              <a href="#" data-name="The_Marc_Dorcel" data-price="15" class="add-to-cart btn btn-dark">Ajouter</a>
+              <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+                En savoir plus
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Modal 15 -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Votre Choix</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Fabrication française. Tissé et imprimé en France.
+                  Sac résistant en coton avec impression.</p>
+                <ul>
+                  <li>100% coton</li>
+                  <li>180gr/m2</li>
+                  <li>37cm x 40cm</li>
+                  <li>Anses de 64cm</li>
+                </ul>
+                <img src="https://media.tenor.com/images/e070868fc12325e760f839eeaf5338aa/tenor.gif" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- produit 16  -->
+        <div class="col-6 col-md-4 d-flex justify-content-center">
+          <div class="card mb-4 py-2" style="width: 20rem;">
+            <img class="card-img-top" src="assets/img/totebages/totebag-pulp-fest-noz.jpg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title text-center">The Tarantino</h4>
+              <p class="h6 ml-2">Tissé et imprimé en France. Sac résistant en coton avec impression.
+              </p>
+              <p class="card-text text-center">15€</p>
+              <a href="#" data-name="The_Tarantino" data-price="15" class="add-to-cart btn btn-dark">Ajouter</a>
+              <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+                En savoir plus
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Modal 16 -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Votre Choix</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Fabrication française. Tissé et imprimé en France.
+                  Sac résistant en coton avec impression.</p>
+                <ul>
+                  <li>100% coton</li>
+                  <li>180gr/m2</li>
+                  <li>37cm x 40cm</li>
+                  <li>Anses de 64cm</li>
+                </ul>
+                <img src="https://media.tenor.com/images/e070868fc12325e760f839eeaf5338aa/tenor.gif" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- produit 17  -->
+        <div class="col-6 col-md-4 d-flex justify-content-center">
+          <div class="card mb-4 py-2" style="width: 20rem;">
+            <img class="card-img-top" src="assets/img/totebages/poisson.jpg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title text-center">The FISH</h4>
+              <p class="h6 ml-2">Tissé et imprimé en France. Sac résistant en coton avec impression.
+              </p>
+              <p class="card-text text-center">15€</p>
+              <a href="#" data-name="The_fish" data-price="15" class="add-to-cart btn btn-dark">Ajouter</a>
+              <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+                En savoir plus
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Modal 17 -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Votre Choix</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Fabrication française. Tissé et imprimé en France.
+                  Sac résistant en coton avec impression.</p>
+                <ul>
+                  <li>100% coton</li>
+                  <li>180gr/m2</li>
+                  <li>37cm x 40cm</li>
+                  <li>Anses de 64cm</li>
+                </ul>
+                <img src="https://media.tenor.com/images/e070868fc12325e760f839eeaf5338aa/tenor.gif" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- produit 18  -->
+        <div class="col-6 col-md-4 d-flex justify-content-center">
+          <div class="card mb-4 py-2" style="width: 20rem;">
+            <img class="card-img-top" src="assets/img/totebages/liberte-egalite-beyonce.jpg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title text-center">The BEYONCE</h4>
+              <p class="h6 ml-2">Tissé et imprimé en France. Sac résistant en coton avec impression.
+              </p>
+              <p class="card-text text-center">15€</p>
+              <a href="#" data-name="The_beyonce" data-price="15" class="add-to-cart btn btn-dark">Ajouter</a>
+              <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+                En savoir plus
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Modal 18 -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Votre Choix</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Fabrication française. Tissé et imprimé en France.
+                  Sac résistant en coton avec impression.</p>
+                <ul>
+                  <li>100% coton</li>
+                  <li>180gr/m2</li>
+                  <li>37cm x 40cm</li>
+                  <li>Anses de 64cm</li>
+                </ul>
+                <img src="https://media.tenor.com/images/e070868fc12325e760f839eeaf5338aa/tenor.gif" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- produit 19  -->
+        <div class="col-6 col-md-4 d-flex justify-content-center">
+          <div class="card mb-4 py-2" style="width: 20rem;">
+            <img class="card-img-top" src="assets/img/totebages/appolinaire.jpg" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title text-center">The APPOLINAIRE</h4>
+              <p>Tissé et imprimé en France. Sac résistant en coton avec impression.
+              <p class="card-text text-center">15€</p>
+              <a href="#" data-name="The_appolinaire" data-price="15" class="add-to-cart btn btn-dark">Ajouter</a>
+              <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+                En savoir plus
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- produit 20  -->
+        <div class="col-6 col-md-4 d-flex justify-content-center">
+          <div class="card mb-4 py-2" style="width: 20rem;">
+            <img class="card-img-top"
+              src="assets/img/totebages/tote-bag-elliot-p_6e0d55f1-a598-48a1-b0d8-7e851fb5669e_250x250@2x.webp"
+              alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title text-center py-2">THE ELIOTT PAGE</h4>
+              <p class="h6">Tissé et imprimé en France. Sac résistant en coton avec impression.
+              </p>
+              <p class="card-text text-center">15€</p>
+              <a href="#" data-name="The_eliott_page" data-price="15" class="add-to-cart btn btn-dark">Ajouter</a>
+              <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
+                En savoir plus
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
+      </div>
+      <!-- modal 20 -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">TOTE BAG "THE BLACK"</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Fabrication française. Tissé et imprimé en France.
+                Sac résistant en coton avec impression.</p>
+              <ul>
+                <li>100% coton</li>
+                <li>180gr/m2</li>
+                <li>37cm x 40cm</li>
+                <li>Anses de 64cm</li>
+              </ul>
+              <img src="https://media.tenor.com/images/e070868fc12325e760f839eeaf5338aa/tenor.gif" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fiche description -->
+    <div class="container mt-5 pb-2">
+      <div class="about-text p-5  text-center">
+        <h2 class="text animated bounce pb-4">LES + COOL DES TOTES BAGS</h2>
+        <hr>
+        <p>Produits en <b>stock</b></p>
+        <p>Livraison suivie <b>48h</b></p>
+        <p>Worldwilde <b>shipping</b></p>
+        <p><b>Satisfait</b> ou <b>remboursé</b></p>
+        <p>Paiement <b>100% sécurisé</b></p>
+        <p>Envoi gratuit dès <b>99€ d'achat*</b></p>
+        <p>N°1 du tote bag depuis <b>2021</b></p>
+        <p class="paragraph_1">Tous nos colis sont emballés avec soin dans nos locaux en région parisienne. Nous
+          attachons
+          une attention
+          particulière à leur confection afin que vous soyez charmés dès l'ouverture. Si toutefois vous n'étiez pas
+          satisfait(e) de nos services ou de vos achats, vous pouvez nous contacter à contact@coolandthebag.com afin
+          que nous trouvions ensemble une solution.</p>
+
+        <p>NB : laver le sac à la main pour le conserver plus longtemps et même pour la vie ❤</p>
+
+        <p class="pb-5">*Exclusivement en France métropolitaine</p>
+
+        <img src="https://i.pinimg.com/564x/34/ef/7f/34ef7fd9047cd1c6cb3fef8ab85164b2.jpg" class="img-fluid border px-5"
+          width="300" alt="Responsive image">
+      </div>
+    </div>
+    <!-- Termes & Conditions -->
+    <div class="container pb-5">
+      <div class="about-text border text-center pt-5">
+        <h2 class="text animated bounce">Suivez-nous !</h2>
+        <hr>
+        <img src="assets/img/totebages/tooooote.gif" class="img-tot" alt="">
+        <div class="about-text  text-center">
+          <div class="row pb-1">
+            <div class="col-sm-4 pb-5 text-center py-4">
+              <h3 class="pb-4">Newsletter</h3>
+              <form action="" method="post">
+                <input type="text" placeholder="exemple@gmail.com">
+                <button type="button" class="btn btn-outline-dark py-2">S'inscrire</button>
+              </form>
+            </div>
+            <div class="col-sm-4 col-md-4 pb-5 text-center py-4">
+              <h3 class="pb-4">Contact</h3>
+              <i class="fa fa-youtube-play" style="font-size:30px"></i>
+              <i class="fa fa-facebook" style="font-size:30px"></i>
+              <i class="fa fa-instagram" style="font-size:30px"></i>
+              <i class="fa fa-twitter" style="font-size:30px"></i>
+            </div>
+            <div class="col-sm-4 col-md-4 pb-5 text-center py-4">
+              <h3 class="text-center pb-2 align-content-center">Service Client</h3>
+              <div class="service">
+                <p>Question?</p>
+                <p>Mon compte</p>
+                <p>Termes et conditions</p>
+                <p>Information de livraisons</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p class="text-dark text-center"> Copyright ©Jameela 2021. Tous droits réservés.</p>
+    </footer>
+    <!--====================== Modal Panier =====================-->
+    <!-- Modal -->
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content modalCart">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Votre panier</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span class="spanhidden" aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <table class="show-cart table">
+            </table>
+            <div>Prix Total: <span class="total-cart"></span> €</div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="close-cart btn btn-secondary" data-dismiss="modal">Fermer</button>
+            <button type="button" class="pay-cart btn btn-primary">Commander</button>
+            <button class="clear-cart btn btn-danger">Vider le Panier</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Jquiery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+      </script>
+    <!-- pour afficher la modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+      integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+      integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous">
+      </script>
+    <!-- pour l autocomplete -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- pour le zoom des photos -->
+    <script src="assets/js/zoomsl.min.js"></script>
+    <!-- le main js de ma page -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

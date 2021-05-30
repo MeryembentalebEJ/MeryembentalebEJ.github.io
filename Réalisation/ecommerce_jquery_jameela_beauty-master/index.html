@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jameela website (e-commerce) page Beauty</title>
+    <!-- Lien pour les font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Alata|Josefin+Sans|Maven+Pro&display=swap" rel="stylesheet">
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <!-- animation -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- CSS file génaral -->
+    <link rel="stylesheet" href="assets/css/style_géneral.css">
+    <!-- CSS file page -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Jq ui pour l autocomplete -->
+    <link rel="stylesheet" href="assets/css/jq-ui.css">
+</head>
+
+<body>
+    <!--==================== Start Header avec la navbar ======================-->
+    <header>
+        <div id="menu" class="fa fa-diamond"></div>
+        <a href="#" class="logo"><img src="assets/img/Acceuil/logo_jameela.png" src="" alt="logo" height="100"
+                width="auto"></a>
+        <nav class="navbar">
+            <a href="index.html">Accueil</a>
+            <a href="beauty.html">Beauty</a>
+            <a href="tote-bags.html">Tote bags</a>
+            <a href="Sunglasses.html">Sunglasses</a>
+            <a href="swimsuits.html">Swimsuits</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="icons">
+            <i class="fa fa-search" id="search-icon"></i>
+            <i class="fa fa-user-circle-o icon" id="user"></i>
+            <i class="fa fa-cart-plus icon" data-toggle="modal" data-target="#cart">(<span
+                    class="total-count"></span>)</i>
+        </div>
+        </div>
+        <form id="search-box">
+            <input type="search" id="search" placeholder="Search here">
+            <label for="search" class="fa fa-search" style="font-size:20px"></label>
+        </form>
+    </header>
+    <!--==================== End Header avec la navbar ======================-->
+    <!--====================== Start login and sing in =======================-->
+    <div class="form">
+        <!-- login -->
+        <div class="login-form">
+            <!-- cancel btn -->
+            <a href="#" class="form-cancel">
+                <i class="fa fa-times"></i>
+            </a>
+            <!-- heading! -->
+            <strong>Log In</strong>
+            <!-- Inputs -->
+            <form>
+                <input type="email" placeholder="Exemple@gmail.com" name="email" required>
+                <input type="password" placeholder="Mot de passe" name="password" required>
+                <!-- submit btn -->
+                <input type="submit" value="Log In">
+            </form>
+            <!-- forget and sing up btn -->
+            <div class="form-btns">
+                <a href="#" class="forget">Mot de passe oublié?</a>
+                <a href="#" class="sign-up-btn">Creer un compte</a>
+            </div>
+        </div>
+        <!-- Sing Up -->
+        <div class="sign-up-form">
+            <!-- cancel btn -->
+            <a href="#" class="form-cancel">
+                <i class="fa fa-times"></i>
+            </a>
+            <!-- heading! -->
+            <strong>Sign Up</strong>
+            <!-- Inputs -->
+            <form>
+                <input type="text" placeholder="Nom et Prénom" name="fullName" required>
+                <input type="email" placeholder="Exemple@gmail.com" name="email" required>
+                <input type="password" placeholder="Mot de passe" name="password" required>
+                <!-- submit btn -->
+                <input type="submit" value="Sing Up">
+            </form>
+            <!-- forget and sign up btn -->
+            <div class="form-btns">
+                <a href="#" class="Already-acount">Avez-vous déjà un compte?</a>
+            </div>
+        </div>
+    </div>
+    <!--=================== End log in and sing in  form ================-->
+
+    <!-- banniere image -->
+    <section id="hero" class="d-flex align-items-center pt-5">
+        <div class="container text-center position-relative">
+            <h1>Jameela</h1>
+            <h2>Natural Beauty</h2>
+            <a href="#portfolio" class="btn-get-started scrollto">Découvrir</a>
+        </div>
+    </section>
+    <!-- produits -->
+    <div id="portfolio" class="text-center paddsection">
+        <div class="section-title text-center">
+            <h2>Nos produits</h2><br>
+        </div>
+        <div class="portfolio-container" id="card">
+            <div class="row pb-4">
+                <div class="col-md-3 portfolio-thumbnail ">
+                    <div class="card" id="card">
+                        <img src="assets/img/Acceuil/lunette_Simone.jpeg" alt="Avatar" class="img-fluid pb-2">
+                        <h4>Lunette de soleil Simone</h4>
+                        <a href="Sunglasses.html"><button type="button" class="btn btn-warning my-4">Consulter pour plus
+                                d'information</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3 portfolio-thumbnail all ">
+                    <div class="card" id="card">
+                        <img src="assets/img/Acceuil/annisa-ica-U6CAOHNDvO4-unsplash.jpg" alt="Avatar"
+                            class="img-fluid pb-2">
+                        <h4>Sac Annisa</h4>
+                        <a href="tote-bags.html"><button type="button" class="btn btn-warning my-4">Consulter pour plus
+                                d'information</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3 portfolio-thumbnail ">
+                    <div class="card" id="card">
+                        <img src="assets/img/Acceuil/tot2.jpeg" alt="Avatar" class="img-fluid pb-2">
+                        <h4>Sac The Librarian</h4>
+                        <a href="tote-bags.html"><button type="button" class="btn btn-warning my-4">Consulter pour plus
+                                d'information</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3 portfolio-thumbnail ">
+                    <div class="card" id="card">
+                        <img src="assets/img/Acceuil/maillot-bleu.jpg" alt="Avatar" class="img-fluid pb-2">
+                        <h4>Maillot de bain</h4>
+                        <a href="swimsuits.html"><button type="button" class="btn btn-warning my-4">Consulter pour plus
+                                d'information</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3 portfolio-thumbnail ">
+                    <div class="card" id="card">
+                        <img src="assets/img/Acceuil/lunette_Rebecca.jpeg" alt="Avatar" class="img-fluid pb-2">
+                        <h4>Lunette de soleil Rebecca</h4>
+                        <a href="Sunglasses.html"><button type="button" class="btn btn-warning my-4">Consulter pour plus
+                                d'information</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3 portfolio-thumbnail ">
+                    <div class="card" id="card">
+                        <img src="assets/img/Acceuil/maillot-noir-final.jpg" alt="Avatar" class="img-fluid pb-2">
+                        <h4>Maillot de bain</h4>
+                        <a href="swimsuits.html"><button type="button" class="btn btn-warning my-4">Consulter pour plus
+                                d'information</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3 portfolio-thumbnail ">
+                    <div class="card" id="card">
+                        <img src="assets/img/Acceuil/anna-elizabeth-yiLlxHbhx0E-unsplash 2.jpg" alt="Avatar"
+                            class="img-fluid pb-2">
+                        <h4>Sac The Sorority</h4>
+                        <a href="tote-bags.html"><button type="button" class="btn btn-warning my-4">Consulter pour plus
+                                d'information</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3 portfolio-thumbnail ">
+                    <div class="card" id="card">
+                        <img src="assets/img/Acceuil/argan-bio.png" alt="Avatar" class="img-fluid pb-2">
+                        <h4>Sérum bio pour les cheveux</h4>
+                        <a href="beauty.html"><button type="button" class="btn btn-warning my-4">Consulter pour plus
+                                d'information</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3 portfolio-thumbnail ">
+                    <div class="card" id="card">
+                        <img src="assets/img/Acceuil/lunette_Katty.jpeg" alt="Avatar" class="img-fluid pb-2">
+                        <h4>Lunette de soleil Katty</h4>
+                        <a href="Sunglasses.html"><button type="button" class="btn btn-warning my-4">Consulter pour plus
+                                d'information</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3 portfolio-thumbnail ">
+                    <div class="card" id="card">
+                        <img src="assets/img/Acceuil/maillot-lacets-verts.jpg" alt="Avatar" class="img-fluid pb-2">
+                        <h4>Maillot de bain</h4>
+                        <a href="swimsuits.html"><button type="button" class="btn btn-warning my-4">Consulter pour plus
+                                d'information</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3 portfolio-thumbnail ">
+                    <div class="card" id="card">
+                        <img src="assets/img/Acceuil/hamma-products.jpg" alt="Avatar" class="img-fluid pb-2">
+                        <h4>Pack d'argan Hammam</h4>
+                        <a href="beauty.html"><button type="button" class="btn btn-warning my-4">Consulter pour plus
+                                d'information</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3 portfolio-thumbnail ">
+                    <div class="card" id="card">
+                        <img src="assets/img/Acceuil/Lunette_Rebecca2.jpeg" alt="Avatar" class="img-fluid pb-2">
+                        <h4>Lunettes</h4>
+                        <a href="Sunglasses.html"><button type="button" class="btn btn-warning my-4">Consulter pour plus
+                                d'information</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3 portfolio-thumbnail ">
+                    <div class="card" id="card">
+                        <img src="assets/img/Acceuil/vitamenE.jpg" alt="Avatar" class="img-fluid pb-2">
+                        <h4>Argan medical Vitamine E</h4>
+                        <a href="beauty.html"><button type="button" class="btn btn-warning my-4">Consulter pour plus
+                                d'information</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3 portfolio-thumbnail ">
+                    <div class="card" id="card">
+                        <img src="assets/img/Acceuil/lunette_Louise.jpeg" alt="Avatar" class="img-fluid pb-2">
+                        <h4>Lunette de soleil Louise</h4>
+                        <a href="Sunglasses.html"><button type="button" class="btn btn-warning my-4">Consulter pour plus
+                                d'information</button></a>
+                    </div>
+                </div>
+                <div class="col-md-3 portfolio-thumbnail ">
+                    <div class="card" id="card">
+                        <img src="assets/img/Acceuil/maillot-blanc-lacets.jpg" alt="Avatar" class="img-fluid pb-2">
+                        <h4>Maillot de bain</h4>
+                        <a href="swimsuits.html"><button type="button" class="btn btn-warning my-4">Consulter pour plus
+                                d'information</button></a>
+                    </div>
+                </div>
+
+                <div class="col-md-3 portfolio-thumbnail ">
+                    <div class="card" id="card">
+                        <img src="assets/img/Acceuil/i92853-.jpeg" alt="Avatar" class="img-fluid pb-2">
+                        <h4> Huile d'argan pour massage</h4>
+                        <a href="beauty.html"><button type="button" class="btn btn-warning my-4">Consulter pour plus
+                                d'information</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- images patchwork -->
+    <div class="container-fluide">
+        <img src="assets/img/Acceuil/patchwork.jpg" class="img-fluid" alt="patchwork d'images">
+    </div>
+    <!-- qui sommes-nous? -->
+    <section>
+        <div class="container">
+            <div class="row pt-2">
+                <div class="col-sm-12 col-md-5 d-flex justify-content-center pt-5">
+                    <img src="assets/img/Acceuil/logo_jameela.png" class="img-fluid" width="300" alt="logo-jameela">
+                </div>
+                <div class="col-sm-12 col-md-7 p-5 text-center">
+                    <h2>Qui sommes nous?</h2>
+                    <p class="text-justify pt-3">Jameela est une marque française créée en 2021 qui propose des produits
+                        de beautés naturels, ainsi qu'une ligne de lunettes de soleil, de tote Bag et de maillots de
+                        bains,made in France. Nous travaillons en collaboration avec des artisans engagés afin de
+                        satifaire l'exigence de notre clientèle. Nos articles sont distribués en France, au Japon, en
+                        Estonie, aux États-Unis, et en Allemagne, dans des concept stores amoureux des marques
+                        françaises.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Termes & Conditions -->
+    <section>
+        <div class="container my-5 py-4">
+            <div class="about-text p-5 border text-center">
+                <h2 class="animate__animated animate__bounce">Suivez-nous !</h2>
+                <hr>
+                <img src="assets/img/Acceuil/nature.gif" class="img-follow py-4" alt="">
+                <div class="about-text  text-center">
+                    <div class="row pb-1">
+                        <div class="col-sm-4 pb-5 text-center ">
+                            <h3 class="pb-4 animate__animated animate__bounce">Newsletter</h3>
+                            <form action="" method="post">
+                                <input type="text" placeholder="exemple@gmail.com">
+                                <button type="button" class="btn btn-outline-dark ">s'inscrire</button>
+                            </form>
+                        </div>
+                        <div class="col-sm-4 col-md-4 pb-5 text-center">
+                            <h3 class="pb-4 animate__animated animate__bounce">Contact</h3>
+                            <i class="fa fa-youtube-play" style="font-size:30px"></i>
+                            <i class="fa fa-facebook" style="font-size:30px"></i>
+                            <i class="fa fa-instagram" style="font-size:30px"></i>
+                            <i class="fa fa-twitter" style="font-size:30px"></i>
+                        </div>
+                        <div class="col-sm-4 col-md-4">
+                            <h3 class="text-center pb-2 align-content-center animate__animated animate__bounce">Service
+                                Client
+                            </h3>
+                            <div class="service text-center">
+                                <p>Question?</p>
+                                <p>Mon compte</p>
+                                <p>Termes et conditions</p>
+                                <p>Information de livraisons</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer class="footer py-2">
+        <p class="text-dark text-center">Copyright © Jameela 2021</p>
+    </footer>
+    <!--====================== Modal Panier =====================-->
+    <!-- Modal -->
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content modalCart">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Votre panier</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span class="spanhidden" aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="show-cart table">
+                    </table>
+                    <div>Prix Total: <span class="total-cart"></span> €</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="close-cart btn btn-secondary" data-dismiss="modal">Fermer</button>
+                    <button type="button" class="pay-cart btn btn-primary">Commander</button>
+                    <button class="clear-cart btn btn-danger">Vider le Panier</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquiery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+        </script>
+    <!-- pour afficher la modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous">
+        </script>
+    <!-- pour l autocomplete -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- pour le zoom des photos -->
+    <script src="assets/js/zoomsl.min.js"></script>
+    <!-- le main js de ma page -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

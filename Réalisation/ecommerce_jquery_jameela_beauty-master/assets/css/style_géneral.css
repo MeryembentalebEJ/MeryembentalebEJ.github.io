@@ -1,0 +1,358 @@
+/*===================== Typos ================*/
+@font-face {
+    font-family: "Chillax-Semibold";
+    src: url(../fonts/Chillax-Semibold.ttf) format("truetype"),
+        url(../fonts/Chillax-Semibold.woff) format('woff2'),
+        url(../fonts/Chillax-Semibold.woff2) format('woff');
+}
+@font-face {
+    font-family: "Chillax-Regular";
+    src: url(../fonts/Chillax-Regular.ttf) format("truetype"),
+        url(../fonts/Chillax-Regular.woff) format('woff2'),
+        url(../fonts/Chillax-Regular.woff2) format('woff');
+}
+@font-face {
+    font-family: "Chillax-Medium";
+    src: url(../fonts/Chillax-Medium.ttf) format("truetype"),
+        url(../fonts/Chillax-Medium.woff) format('woff2'),
+        url(../fonts/Chillax-Medium.woff2) format('woff');
+}
+@font-face {
+    font-family: "Chillax-Light";
+    src: url(../fonts/Chillax-Light.ttf) format("truetype"),
+        url(../fonts/Chillax-Light.woff) format('woff2'),
+        url(../fonts/Chillax-Light.woff2) format('woff');
+}
+/*===================== Html ================*/
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+html::-webkit-scrollbar-track{
+    background: #333;
+}
+html::-webkit-scrollbar-thumb{
+    background:#f8efe9;
+    border-radius: 10%;
+}
+/* 
+body{
+    font-family: "Chillax-Regular";
+    height: 100rem; 
+}*/
+/*===================== Start Header ================*/
+header.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+header{
+    z-index: 1;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7rem;
+    position: relative;
+    font-family: "Chillax-Regular";
+}
+#search-box{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background:#ffd7ba;
+    padding: 2rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    transform-origin: top;
+    transform: scaleY(0);
+    opacity: 0;
+}
+#search-box.active{
+    transform: scaleY(1);
+    opacity: 1;
+}
+#search-box #search{
+    width: 100%;
+    padding: 12px;
+    text-transform: none;
+    font-size: 1rem;
+}
+#search-box #search::placeholder{
+    text-transform: capitalize;
+}
+#search-box label{
+    color: #333;
+    cursor: pointer;
+    padding-left: 2rem;
+}
+header .navbar a{
+    color: #333;
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    text-decoration: none;
+}
+header .navbar a:hover{
+    color: #ffd7ba;
+}
+header .icons i, header .icons a{
+    font-size: 1.5rem;
+    color: #333;
+    padding-left: 1rem;
+    cursor: pointer;
+}
+header .icons i:hover, header .icons a:hover{
+    color: #ffd7ba;
+}
+.fa-times{
+    transform:rotate(-360deg);
+}
+#menu{
+    font-size: 3rem;
+    color: #333;
+    display: none;
+    cursor: pointer;
+}
+/* MediaQueries header */
+@media (max-width:1024px){
+    header .navbar a{
+        font-size: 1rem;
+    }
+}
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 1000;
+        padding: 2rem;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        transform-origin: top;
+        transform: scaleY(0);
+        opacity: 0;
+    }
+    header .navbar a{
+        font-size: 2rem;
+        padding:1.5rem;
+    }
+    /* header .navbar.nav-toggle{
+        transform: scaleY(1);
+        opacity: 1;
+        background-color:  rgba(255, 215, 186, 0.8);
+    } */
+    #menu{
+        display: block;
+    }
+}
+/*============== Log In form ===================*/
+.form{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.2);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;;
+    align-items: center;
+    flex-direction: column;
+    z-index: 102;
+}
+.login-form, .sign-up-form{
+    position: relative;
+    width: 420px;
+    padding: 20px 10px;
+    background: #fff;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+}
+.login-form form, .sign-up-form form{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.login-form strong, .sign-up-form strong{
+    color: #272727;
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 2px 7px 7px 7px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-family: 'chillax-Medium';
+}
+.login-form input, .sign-up-form input{
+    width: 90%;
+    height: 45px;
+    margin: 6px 0px;
+    padding: 0px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    outline: none;
+    border-radius: 7px;
+}
+.login-form input::placeholder, .sign-up-form input::placeholder{
+    color: rgba(0,0,0,0.5);
+}
+.login-form input[type="submit"], .sign-up-form input[type="submit"]{
+    background: #606c38;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    margin-top: 10px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    font-weight: 700;
+    font-family: 'chillax-Medium';
+}
+.form-btns{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.form-btns a{
+    color: #4d4d4d;
+    font-size: 0.9rem;
+    text-decoration: none;
+    font-family: 'chillax-Medium';
+}
+.sign-up-btn{
+    border-bottom: 1px solid #868686;
+    line-height: 16px;
+}
+.form-cancel{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    color: #868686;
+    font-size: 20px;
+}
+.form-cancel:hover{
+    color: #bc6c25;
+    transition: all ease 0.3s;
+}
+.login-form, .sign-up-form, .form{
+    display: none;
+} 
+.login-active,
+.login-active .login-form{
+    display: flex;
+}
+.sign-up-active,
+.sign-up-active .sign-up-form{
+    display: flex;
+} 
+/*======================= End header =====================*/
+/*======================= style modal panier =====================*/
+.close-cart{
+    background-color:#d8e2dcff;
+    border-color: #d8e2dcff;
+}
+.close-cart:hover{
+    background-color:  rgb(181, 224, 198);
+    border-color: rgb(181, 224, 198);
+}
+.pay-cart{
+    background-color:  #ffd7baff;
+    border-color: #ffd7baff;
+}
+.pay-cart:hover{
+        background-color:  #fec89aff;
+    border-color: #fec89aff;
+}
+.clear-cart{
+    background-color:#fcd5ceff;
+    border-color: #fcd5ceff;
+}
+.clear-cart:hover{
+    background-color: rgb(250, 155, 141);
+    border-color: rgb(250, 155, 141);
+}
+.minus-item, .plus-item{
+    background-color: rgb(175, 175, 173);
+    border-color: rgb(175, 175, 173);
+}
+.minus-item:hover{
+    background-color: rgb(121, 121, 119);
+    border-color: rgb(121, 121, 119);
+}
+.plus-item:hover{
+    background-color: rgb(121, 121, 119);
+    border-color: rgb(121, 121, 119);
+}
+.delete-item{
+    color: #fcd5ceff;
+    background-color:#fcd5ceff;
+    border-color: #fcd5ceff;
+}
+.delete-item:hover{
+    color: white;
+    background-color:rgb(250, 155, 141);
+    border-color: rgb(250, 155, 141);
+}
+.spanhidden{
+    border: 1px solid  rgb(121, 121, 119);
+    border-radius: 10%;
+    padding: 30%;
+    font-family: "Chillax-Medium";
+}
+
+  /* Gallary search filter */
+/* .card{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+.card:hover{
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.7);
+} */
+
+.section-title {
+    margin: 50px 0px 50px 0px;
+}
+.section-title h2 {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#portfolio .portfolio-list {
+    margin-bottom: 50px;
+}
+
+.portfolio-thumbnail img {
+    width:400px;
+    height: 230px;
+}
+.btn-warning{
+background-color: #ffd7ba;
+border-color: #ffd7ba;
+}
+/*======================= Footer =====================*/
+.service{
+    font-size: 10px;
+    line-height: 6px;
+}
+    footer{
+    background-color:  #e8e8e4ff ;
+}
