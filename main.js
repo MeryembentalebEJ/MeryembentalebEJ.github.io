@@ -36,6 +36,7 @@ $(document).ready(function(){
     });
   
   });
+  // Parcours =============
 
   $(document).ready(function(){
     $(".step").click( function() {
@@ -44,28 +45,32 @@ $(document).ready(function(){
   });
   
   $(".step01").click( function() {
-      $("#line-process").css("width", "3%");
-      $(".discovery").addClass("active").siblings().removeClass("active");
-  });
+    $("#line-process").css("width", "3%");
+    $(".diplôme").addClass("active").siblings().removeClass("active");
+      
   
   $(".step02").click( function() {
-      $("#line-process").css("width", "25%");
-      $(".strategy").addClass("active").siblings().removeClass("active");
+    $("#line-process").css("width", "25%");
+    $(".management").addClass("active").siblings().removeClass("active");
+      
   });
   
   $(".step03").click( function() {
-      $("#line-process").css("width", "50%");
-      $(".strategyOne").addClass("active").siblings().removeClass("active");
+    $("#line-process").css("width", "50%");
+    $(".strategyOne").addClass("active").siblings().removeClass("active");
   });
   
   $(".step04").click( function() {
-      $("#line-process").css("width", "75%");
-      $(".management").addClass("active").siblings().removeClass("active");
+    $("#line-process").css("width", "75%");
+    $(".strategy").addClass("active").siblings().removeClass("active");
+      
   });
   
   $(".step05").click( function() {
-      $("#line-process").css("width", "100%");
-      $(".diplôme").addClass("active").siblings().removeClass("active");
+    $("#line-process").css("width", "100%");
+    $(".discovery").addClass("active").siblings().removeClass("active");
+  });
+      
   });
   });
 

@@ -8,6 +8,9 @@
     }
 }
 @media (max-width:1024px){
+    html{
+        font-size: 55%;
+    }
     .home p{
         max-width: 70rem;
     }
@@ -19,71 +22,84 @@
         width: 100%;
         top: 40%;
         font-size: 10px;
-      }
-      #progress-content-section{
+    }
+    #progress-content-section{
         border-radius: 8px;
         margin-top: 15%;
-      }
-      #progress-bar-container #line{
+    }
+    #progress-bar-container #line{
         top: 145px;
-      } 
-      .about .row .presentation p{
+    } 
+    .about .row .presentation p{
         font-size: 2rem;
-     }
-     .about .row .presentation .box{
+    }
+    .about .row .presentation .box{
          width:70rem;
-     }
-     .portfolio .project { 
+    }
+    .portfolio .project { 
         width: 600px;
     }
+    .skills .box{
+        width: 100%;
+     } 
 }
+/* =============================================== */
 
 @media (max-width:991px){
-   header{
+    header{
        left:-120%;
-   }
-   #menu{
+    }
+    #menu{
        display: block;
-   }
-   header.toggle{
-    left:0%;
-   }
-   body{
+    }
+    header.toggle{
+       left:0%;
+    }
+    body{
        padding:0;
-   }
-   .skills .box{
-    width: 100%;
-   } 
-   .skills .box .item-desc {
-    font-size: 2rem;
-   }
+    }
+    .skills .box{
+       width: 100%;
+    } 
+    .skills .box .item-desc {
+       font-size: 2rem;
+    }
 }
+/* ================= Ipad =========================== */
 @media (max-width:768px){
-
     html{
         font-size: 50%;
     }
     #progress-content-section{
         border-radius: 7px;
         margin-top: 17%;
-      }
-      .home p{
+    }
+    .home p{
         max-width: 70rem;
     }
-      #progress-bar-container #line{
+    .webDesign .row .title{
+        padding: 2rem 0;
+    }
+    #progress-bar-container #line{
         left: 10%;
         top: 175px;
-      } 
-      #progress-bar-container li:after{
+    } 
+    #progress-bar-container li:after{
         margin-top: 120px;
-      }
-      .about .row .presentation p{
+    }
+    .about .row .presentation p{
         font-size: 2rem;
-     }
+    }
      .about .row .counter .box.letter{
         width:70rem;
     }
-     .portfolio .project { 
+    .about .row .counter .box{
+        width: 20%;
+    }
+    .about .row .presentation .box{
+        width: 90%;
+    }
+    .portfolio .project { 
         width: 700px;
     }
     .portfolio{
@@ -92,19 +108,45 @@
     .skills .row{
         padding:0 0 0;
     }
-    
+    .contact{
+        margin-bottom: 40rem;
+    }
+ }
+ /* ============Iphone =============== */
+ @media (max-width:375px){
+        .contact{
+        margin-bottom: 3rem;
+    }
  }
  @media (max-width:414px){
     #progress-content-section{
         border-radius: 7px;
         margin-top: 30%;
-      }
-      .portfolio .project { 
+    }
+    .portfolio .project { 
         width: 400px;
     }
     .portfolio{
         margin-left: 0px;
     }
+    .about .row .counter .box{
+        width: 70%;
+    }
+    .about .row .presentation .box{
+        width: 90%;
+    }
+    .about .row .counter .box.letter{
+        width:50rem;
+    }
+    #progress-bar-container li .step-inner{
+        position: absolute;
+        width: 100%;
+        top: 40%;
+        font-size: 8px;
+    }
+    .contact{
+        margin-bottom: 9rem;
+    } 
 }
 @media (max-width:400px){
 
@@ -136,9 +178,6 @@
     .portfolio{
         margin-left: 0px;
     }
-    .contact .row form{
-        margin:3rem 0;
-    }
     #progress-bar-container li .step-inner{
         position: absolute;
         width: 100%;
@@ -164,4 +203,5 @@
         font-size: 25px;
         line-height: 50px;
     }
+    
  }
